@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - JAMB Website Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-center p-3 bg-success text-white">
+        <img src="/pix/jamb logo.jpg" alt="JAMB Logo" class="logo">
+        <h1>Joint Admissions and Matriculation Board</h1>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Sign-Up Section -->
+        <section id="register" class="text-center mt-4">
+            <h2>Sign Up (e-Mail Verification)</h2>
+            <p class="text-danger"><strong>Important Notice!</strong></p>
+            <p>You are advised to create an account with a valid email address because all vital information will be sent to the email you supplied. <strong class="text-danger">Yahoo mails are not encouraged due to delay in delivery.</strong></p>
+
+            <form id="registerForm" class="mx-auto w-50">
+                <input type="email" id="regEmail" class="form-control mb-2" placeholder="e-Mail Address" required>
+                <input type="email" id="confirmEmail" class="form-control mb-2" placeholder="Confirm e-Mail Address" required>
+                <input type="text" id="mobileNumber" class="form-control mb-2" placeholder="Mobile No" required>
+                <input type="text" id="confirmMobileNumber" class="form-control mb-2" placeholder="Confirm Mobile No" required>
+
+                <select id="securityQuestion" class="form-control mb-2">
+                    <option value="" disabled selected>Select a Security Question</option>
+                    <option value="mother">What is your mother's maiden name?</option>
+                    <option value="pet">What was the name of your first pet?</option>
+                </select>
+
+                <input type="text" id="securityAnswer" class="form-control mb-2" placeholder="Secret Question Answer" required>
+                <input type="text" id="confirmSecurityAnswer" class="form-control mb-2" placeholder="Confirm Secret Question Answer" required>
+
+                <input type="password" id="regPassword" class="form-control mb-2" placeholder="Password" required>
+                <input type="password" id="confirmPassword" class="form-control mb-2" placeholder="Confirm Password" required>
+
+                <button type="submit" class="btn btn-primary w-100">Verify e-Mail</button>
+            </form>
+            <p class="mt-2">Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+
+        <!-- Check Results Section -->
+        <section id="checkResults" class="text-center mt-4">
+            <h2>Check Results</h2>
+            <form id="checkResultsForm" class="mx-auto w-50">
+                <input type="email" id="resultEmail" class="form-control mb-2" placeholder="e-Mail Address" required>
+                <input type="password" id="resultPassword" class="form-control mb-2" placeholder="Password" required>
+                <input type="text" id="scratchCardPin" class="form-control mb-2" placeholder="Scratch Card PIN" required>
+                <button type="submit" class="btn btn-primary w-100">Check Results</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-success text-white">
+        <p>2025 @ Joint Admissions and Matriculation Board (JAMB)</p>
+        <p>Build by Emmanuel's Web Dev.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
